@@ -15,14 +15,14 @@ public abstract class Person {
 		
 	}
 	
-	//getter / accessor
+	//getter / accesor
 	public int getAge() {
 		return this.age;
 	}
 	
 	//setter / mutator
 	public void setage(int age) {
-		this.age = age;
+		this.age = age; //*this* gets the value of that particular object
 	}
 	
 	//methods

@@ -27,6 +27,7 @@ abstract public class StaffMember {
 
 		result += "Address: " + address + "\n";
 		result += "Phone: " + phone;
+		result += "\nVacation Days " + vacationDays();
 
 		return result;
 	}
@@ -35,5 +36,8 @@ abstract public class StaffMember {
 	// Derived classes must define the pay method for each type of
 	// employee.
 	// -----------------------------------------------------------------
+	
 	public abstract double pay();
+	
+	public abstract double vacationDays();
 }

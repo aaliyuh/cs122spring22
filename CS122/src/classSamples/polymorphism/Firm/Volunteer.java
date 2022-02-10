@@ -19,4 +19,12 @@ public class Volunteer extends StaffMember {
 	public double pay() {
 		return 0.0;
 	}
+	
+	public double vacationDays() {
+		return 0;
+	}
+	
+	public String toString() {
+		return super.toString() + this.vacationDays();
+	}
 }

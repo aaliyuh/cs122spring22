@@ -46,4 +46,13 @@ public class Hourly extends Employee {
 
 		return result;
 	}
+	
+	public double vacationDays() {
+		if (pay() >500) {
+			return 10;
+		}
+		else {
+			return 0;
+		}
+	}
 }

@@ -23,9 +23,9 @@ public class Employee extends StaffMember {
 	// Returns information about an employee as a string.
 	// -----------------------------------------------------------------
 	public String toString() {
-		String result = super.toString();
+		String result = super.toString(); //call toString method from parent using "super" which is calling staff member
 
-		result += "\nSocial Security Number: " + socialSecurityNumber;
+		result += "\nSocial Security Number: \n" + socialSecurityNumber;
 
 		return result;
 	}
@@ -35,5 +35,9 @@ public class Employee extends StaffMember {
 	// -----------------------------------------------------------------
 	public double pay() {
 		return payRate;
+	}
+
+	public double vacationDays() {
+		return 28;
 	}
 }
