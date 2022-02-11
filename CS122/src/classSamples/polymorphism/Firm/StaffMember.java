@@ -27,7 +27,7 @@ abstract public class StaffMember {
 
 		result += "Address: " + address + "\n";
 		result += "Phone: " + phone;
-		result += "\nVacation Days " + vacationDays();
+		result += "\nVacation Days " +this.vacationDays();
 
 		return result;
 	}

@@ -25,6 +25,6 @@ public class Volunteer extends StaffMember {
 	}
 	
 	public String toString() {
-		return super.toString() + this.vacationDays();
+		return super.toString() ;
 	}
 }
