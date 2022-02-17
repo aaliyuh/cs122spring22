@@ -6,5 +6,7 @@ public class Student extends Person {
 	final int JUNIOR = 2;
 	final int SENIOR = 3;
 	
+	protected String status;
+	
 
 }

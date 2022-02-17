@@ -4,7 +4,7 @@ public class Employee extends Person {
 	
 	//office, salary, date hired
 	
-	private String office, dateHired;
-	private double salary;
+	protected String office, dateHired;
+	protected double salary;
 
 }

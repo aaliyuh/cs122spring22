@@ -32,7 +32,7 @@ public class Sorting<T> {
 	// -----------------------------------------------------------------
 	public void insertionSort(Comparable<T>[] list) {
 		for (int index = 1; index < list.length; index++) {
-			Comparable<T> key = list[index];
+			Comparable<T> key = list[index]; // this is the key
 			int position = index;
 
 			// Shift larger values to the right
