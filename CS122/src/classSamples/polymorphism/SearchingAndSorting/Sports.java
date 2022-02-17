@@ -23,13 +23,13 @@ public class Sports implements Comparable<Sports> {
 
 	//create toString()
 	public String toString() {
-		return "name: \n " + getName() + "players \n" + getPlayers();
+		return name + "has " + players + " players";
 	}
 
 	//overrride equals method
 	public boolean equals(Object o) {
-		return (name.equals(((Sports) o).getName()) && players == (((Sports) o).getPlayers()));
-		
+		return name.equals(((Sports) o).getName());
+	
 	}
 	
 
@@ -38,6 +38,8 @@ public class Sports implements Comparable<Sports> {
 	public int compareTo(Sports o) {
 		
 		return name.compareTo(o.getName());
+		
+		// return ((Integer)players).compareTo(((Integer) o).getPlayers());
 
 		
 	}
