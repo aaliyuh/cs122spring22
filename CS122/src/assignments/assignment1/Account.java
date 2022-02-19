@@ -4,8 +4,8 @@ public class Account {
 
 	//good practice- start with private, then work your way to public
 	// instance variables
-	private int Id;
-	private double balance;
+	protected int Id;
+	protected double balance;
 	private double annualInterestRate;
 
 	//constructors
@@ -68,6 +68,13 @@ public class Account {
 
 	}
 	
-
+	//override toString
+	public String toString() {
+		String test = "";
+		test += "Account Id: " + Id + "\n";
+		test += "Balance: " + balance + "\n";
+		test += "Annual Interest Rate: " + annualInterestRate + "\n";
+		return test;
+	}
 
 }
