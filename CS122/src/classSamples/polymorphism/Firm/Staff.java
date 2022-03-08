@@ -4,7 +4,7 @@ package classSamples.polymorphism.Firm;//***************************************
 //  Represents the personnel staff of a particular business.
 //********************************************************************
 
-public class Staff {
+public class Staff implements Payable {
 	private final StaffMember[] staffList;
 
 	// -----------------------------------------------------------------
@@ -47,4 +47,9 @@ public class Staff {
 			System.out.println("-----------------------------------");
 		}
 	}
+	
+	public void payable() {
+		System.out.println("Paid");
+	}
+	
 }

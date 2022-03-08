@@ -6,7 +6,7 @@ public class Staff extends Employee {
 	
 	//constructors
 	public Staff(String name) {
-		this(name, "none");
+		this(name, "");
 	}
 	
 	public Staff(String name, String title) {

@@ -24,6 +24,8 @@ public class PhoneList {
 		Sorting<Contact> sorts = new Sorting<Contact>();
 		sorts.selectionSort(friends);
 
+		System.out.println("Sorted List");
+		System.out.println();
 		for (Contact friend : friends)
 			System.out.println(friend);
 	}

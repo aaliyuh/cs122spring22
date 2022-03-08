@@ -10,6 +10,11 @@ public class Searching<T> {
 	// a linear search. Returns a reference to the target object from
 	// the array if found, and null otherwise.
 	// -----------------------------------------------------------------
+	
+	//assigning references of arrays is important concept - passing memory values
+	
+	//list is an array of type T
+	//target is what you are searching for
 	public T linearSearch(T[] list, T target) {
 		int index = 0;
 		boolean found = false;

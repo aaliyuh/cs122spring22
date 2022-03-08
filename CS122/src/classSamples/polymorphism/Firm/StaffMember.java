@@ -5,6 +5,7 @@ package classSamples.polymorphism.Firm;//***************************************
 //********************************************************************
 
 abstract public class StaffMember {
+	protected final double VACAY_DAYS = 14;
 	protected String name;
 	protected String address;
 	protected String phone;
@@ -39,5 +40,7 @@ abstract public class StaffMember {
 	
 	public abstract double pay();
 	
-	public abstract double vacationDays();
+	public double vacationDays() { 
+		return VACAY_DAYS;
+	};
 }

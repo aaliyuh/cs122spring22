@@ -6,7 +6,7 @@ public class Account {
 	// instance variables
 	protected int Id;
 	protected double balance;
-	private double annualInterestRate;
+	protected double annualInterestRate;
 
 	//constructors
 	public Account() {

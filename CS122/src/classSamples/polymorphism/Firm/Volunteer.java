@@ -20,11 +20,15 @@ public class Volunteer extends StaffMember {
 		return 0.0;
 	}
 	
-	public double vacationDays() {
-		return 0;
-	}
+	//public double vacationDays() {
+	//	return 0;
+	//}
 	
 	public String toString() {
 		return super.toString() ;
+	}
+	
+	public void payable() {
+		System.out.println("Paid:");
 	}
 }

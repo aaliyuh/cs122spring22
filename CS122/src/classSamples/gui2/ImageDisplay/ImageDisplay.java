@@ -19,12 +19,15 @@ public class ImageDisplay extends Application {
 	// Displays an image centered in a window.
 	// --------------------------------------------------------------------
 	public void start(Stage primaryStage) {
-		Image img = new Image("gull.jpg");
+		Image img = new Image("classSamples/gui2/ImageDisplay/gull.jpg");
 		ImageView imgView = new ImageView(img);
+		Image im2 = new Image("");
+		ImageView = imgView2 = new ImageVier(img2);
 
-		StackPane pane = new StackPane(imgView);
-		pane.setStyle("-fx-background-color: cornsilk");
+		StackPane pane = new StackPane(imgView2, imgView);
+		pane.setStyle("-fx-background-color: pink");
 		imgView.setViewport(new Rectangle2D(200, 80, 70, 60));
+		imgView2.setViewPort(new Rectangle(150,60,150,150));
 
 		Scene scene = new Scene(pane, 500, 350);
 

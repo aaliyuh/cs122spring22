@@ -20,11 +20,12 @@ public class HelloJavaFX extends Application {
 		Text question = new Text(120, 80, "How's it going?");
 
 		Group root = new Group(hello, question);
-		Scene scene = new Scene(root, 300, 120, Color.LIGHTGREEN);
+		Scene scene = new Scene(root, 300, 120, Color.LIGHTPINK);
 
 		primaryStage.setTitle("A JavaFX Program");
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		//these three lines are present in all program with FX
 	}
 
 	// --------------------------------------------------------------------
@@ -35,3 +36,5 @@ public class HelloJavaFX extends Application {
 		launch(args);
 	}
 }
+
+//starting point: top left, width, length

@@ -31,8 +31,9 @@ public class Einstein extends Application {
 		ellipse.setFill(Color.PALEGREEN);
 
 		Text quote = new Text(120, 100, "Out of clutter, find " + "simplicity.\n-- Albert Einstein");
+		quote.setRotate(-45);
 
-		Group root = new Group(ellipse, rect, circle, line, quote);
+		Group root = new Group(ellipse, rect, circle, line, quote); //order matters
 		Scene scene = new Scene(root, 400, 200);
 
 		primaryStage.setTitle("Einstein");
