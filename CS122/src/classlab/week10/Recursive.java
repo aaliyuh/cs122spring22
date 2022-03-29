@@ -23,3 +23,5 @@ public class Recursive {
 
 	}
 }
+
+//static: object is needed
