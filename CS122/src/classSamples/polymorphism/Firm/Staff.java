@@ -11,7 +11,7 @@ public class Staff implements Payable {
 	// Constructor: Sets up the list of staff members.
 	// -----------------------------------------------------------------
 	public Staff() {
-		staffList = new StaffMember[6];
+		staffList = new StaffMember[8];
 
 		staffList[0] = new Executive("Sam", "123 Main Line", "555-0469", "123-45-6789", 2423.07);
 
@@ -22,7 +22,9 @@ public class Staff implements Payable {
 
 		staffList[4] = new Volunteer("Norm", "987 Suds Blvd.", "555-8374");
 		staffList[5] = new Volunteer("Cliff", "321 Duds Lane", "555-7282");
-
+		staffList[6] = new Employee("Aaliyah", "123 Bruh St", "123-456-7890", "122-45-4567", 9.75);
+		staffList[7] = new Employee("Sara", "456 Bruh St", "123-456-7890", "122-45-4567", 6.25);
+		
 		((Executive) staffList[0]).awardBonus(500.00);
 
 		((Hourly) staffList[3]).addHours(40);
