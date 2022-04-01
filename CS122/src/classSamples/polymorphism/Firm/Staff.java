@@ -22,12 +22,16 @@ public class Staff implements Payable {
 
 		staffList[4] = new Volunteer("Norm", "987 Suds Blvd.", "555-8374");
 		staffList[5] = new Volunteer("Cliff", "321 Duds Lane", "555-7282");
-		staffList[6] = new Employee("Aaliyah", "123 Bruh St", "123-456-7890", "122-45-4567", 9.75);
-		staffList[7] = new Employee("Sara", "456 Bruh St", "123-456-7890", "122-45-4567", 6.25);
-		
+		staffList[6] = new Commission("Aaliyah", "123 Bruh St", "123-456-7890", "122-45-4567", 9.75, 0.6);
+		staffList[7] = new Commission("Sara", "456 Bruh St", "123-456-7890", "122-45-4567", 6.25, 0.50);
+
 		((Executive) staffList[0]).awardBonus(500.00);
 
 		((Hourly) staffList[3]).addHours(40);
+		((Commission) staffList[6]).addHours(35);
+		((Commission) staffList[7]).addHours(40);
+		((Commission) staffList[6]).addSales(400);
+		((Commission) staffList[7]).addSales(950);
 	}
 
 	// -----------------------------------------------------------------
@@ -49,9 +53,9 @@ public class Staff implements Payable {
 			System.out.println("-----------------------------------");
 		}
 	}
-	
+
 	public void payable() {
 		System.out.println("Paid");
 	}
-	
+
 }
