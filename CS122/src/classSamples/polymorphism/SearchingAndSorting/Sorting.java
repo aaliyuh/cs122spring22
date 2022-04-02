@@ -38,7 +38,7 @@ public class Sorting<T> {
 			int position = index;
 
 			// Shift larger values to the right
-			while (position > -1 && key.compareTo((T) list[position - 1]) < 0) {
+			while (position > 0 && key.compareTo((T) list[position - 1]) > 0) {
 				list[position] = list[position - 1];
 				position--;
 			}
