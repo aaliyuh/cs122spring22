@@ -32,7 +32,7 @@ public class Sorting<T> {
 	// Sorts the specified array of objects using the insertion
 	// sort algorithm.
 	// -----------------------------------------------------------------
-	public void insertionSort(Comparable<T>[] list) {
+	public static void insertionSort(Comparable<T>[] list) {
 		for (int index = 1; index < list.length; index++) {
 			Comparable<T> key = list[index]; // this is the key
 			int position = index;
@@ -45,5 +45,10 @@ public class Sorting<T> {
 
 			list[position] = key;
 		}
+	}
+
+	public static void insertionSort(Salesperson[] salesStaff) {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -1,6 +1,6 @@
 package classSamples.polymorphism.SearchingAndSorting;
 
-public class Salesperson implements Comparable
+public class Salesperson implements Comparable<Object>
 {
 	private String firstName, lastName;
 	private int totalSales;
@@ -33,7 +33,7 @@ public class Salesperson implements Comparable
 	//--------------------------------------------------
 	public int compareTo(Object other)
 	{
-		int result = 0;
+		int result = 100;
 		return result;
 	}
 	//-------------------------
@@ -60,5 +60,10 @@ public class Salesperson implements Comparable
 	public int getSales()
 	{
 		return totalSales;
+	}
+	@Override
+	public int compareTo(SalesPerson o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

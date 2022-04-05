@@ -14,8 +14,7 @@ public class Commission extends Hourly {
 	}
 	
 	public double pay() {
-		double paid = super.pay() + totalSales * commissionRate;
-		totalSales = 0;
+		double paid = super.pay() + (totalSales * commissionRate);
 		return paid;
 	}
 	
