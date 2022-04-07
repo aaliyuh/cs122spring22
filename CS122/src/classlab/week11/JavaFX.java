@@ -1,5 +1,6 @@
-package classlab.solutions.week11;
+package classlab.week11;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import javafx.application.Application;
@@ -51,6 +52,11 @@ public class JavaFX extends Application{
     }
     public static void main(String[] args) {
         launch(args);
+        
+      //  ArrayList<Integer> i = new ArrayList<Integer>();
+      //  i.add(1);
+       // i.add(2);
+       // i.forEach((x)->{System.out.println(x*x});
     }
 
 }
