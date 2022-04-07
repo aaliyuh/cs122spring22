@@ -56,11 +56,17 @@ public class FahrenheitPane extends GridPane {
 
 	// --------------------------------------------------------------------
 	// Computes and displays the converted temperature when the user
+	
 	// presses the return key while in the text field.
 	// --------------------------------------------------------------------
 	public void processReturn(ActionEvent event) {
+		try {
 		int fahrenheitTemp = Integer.parseInt(fahrenheit.getText());
 		int celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
 		result.setText(celsiusTemp + "");
+		} catch (Exception e){
+			result.setText("error");
+			setStyle("-fx-background-color: red");	
+		}
 	}
 }
