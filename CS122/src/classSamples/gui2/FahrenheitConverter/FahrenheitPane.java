@@ -67,6 +67,7 @@ public class FahrenheitPane extends GridPane {
 		} catch (Exception e){
 			result.setText("error");
 			setStyle("-fx-background-color: red");	
+			result.setTextFill(Color.RED);
 		}
 	}
 }
