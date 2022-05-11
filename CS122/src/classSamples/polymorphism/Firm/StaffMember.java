@@ -38,7 +38,9 @@ abstract public class StaffMember {
 	// employee.
 	// -----------------------------------------------------------------
 	
-	public abstract double pay();
+	public double pay() {
+		return 0;
+	}
 	
 	public double vacationDays() { 
 		return VACAY_DAYS;
